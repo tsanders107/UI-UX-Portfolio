@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Taylor Sanders - UI/UX Designer portfolio. Explore my design projects." />
+  <meta name="theme-color" content="#6466e3" />
+  <title>Taylor Sanders | UI/UX Designer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles (1).css" />
+</head>
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+
+  <!-- HERO -->
+  <header class="hero">
+    <p class="hero__name">Taylor Sanders</p>
+
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="hero__light">Portfolio</span>
+        <span class="hero__serif">UI/UX Designer</span>
+      </h1>
+      <button id="explore-btn" class="btn btn--dark" type="button">Explore Now</button>
+    </div>
+  </header>
+
+  <!-- WELCOME -->
+  <section class="welcome">
+    <p>
+      Welcome to my Portfolio!<br />
+      I'm a UI/UX designer and front-end developer passionate about creating visually engaging experiences.<br /> I combine creative design with technical skills to bring ideas to life.<br />
+      Take a look at some of my projects below!
+    </p>
+  </section>
+
+  <!-- PROJECTS (cards are generated from projects.js) -->
+  <main id="projects" class="projects" aria-label="Projects"></main>
+
+  <!-- FOOTER / CONTACT -->
+  <footer class="footer">
+    <h2 class="footer__title">My Contact Information</h2>
+    <nav class="footer__links" aria-label="Contact links">
+      <a href="mailto:your.email@example.com">Email</a>
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net/your-profile" target="_blank" rel="noopener">Handshake</a>
+      <a href="tel:657-626-4936">657-626-4936</a>
+    </nav>
+    <a class="btn btn--light" href="resume.pdf" download>My Resume</a>
+    <p class="footer__copy">&copy; <span id="year"></span> Taylor Sanders</p>
+  </footer>
+
+  <noscript>
+    <p class="noscript">Please enable JavaScript to see the project cards.</p>
+  </noscript>
+
+  <script src="projects (1).js"></script>
+  <script src="script (1).js"></script>
+</body>
+</html>
