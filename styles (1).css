@@ -27,9 +27,12 @@ button { font: inherit; }
 .hero__light { position: absolute; isolation: isolate; display: block; left: 13.37%; top: 35.29%; width: fit-content; font-family: "Times New Roman", Times, serif; font-size: 11.9266cqw; font-weight: 700; letter-spacing: 0; color: var(--cream); -webkit-text-stroke: 1px var(--orange); }
 .hero__light::before { content: attr(data-text); position: absolute; inset: 0; z-index: -1; transform: translate(1.05cqw, -.79cqw); color: var(--lavender); -webkit-text-stroke: 0; }
 .hero__serif { position: absolute; right: 16.12%; top: 59.53%; display: block; text-align: right; color: var(--orange); font: 400 2.097cqw/.95 "Barlow Condensed", "Arial Narrow", sans-serif; }
-.hero-actions { position: absolute; left: 13.37%; top: 74%; }
+/* Place the button 32px below the two-line subtitle, aligned with the name. */
+.hero-actions { position: absolute; left: 13.37%; top: calc(59.53% + 3.9843cqw + 32px); }
 .btn, .card__link { display: inline-flex; align-items: center; justify-content: space-between; gap: 36px; border: 1px solid var(--orange); background: transparent; padding: 11px 22px; color: #c9340d; font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-size: 18px; line-height: 1.4; text-decoration: none; cursor: pointer; transition: background .2s, color .2s, transform .2s; }
 .btn:hover, .card__link:hover { background: var(--orange); color: var(--cream); transform: translateY(-2px); }
+.hero-actions .btn { border-radius: 8px; }
+.hero-actions .btn:hover { background: transparent; color: #c9340d; }
 .hero-actions .btn span { width: 11px; height: 11px; font-size: 0; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; }
 
 .welcome { max-width: var(--content-width); width: 80%; margin: 0 auto; padding: 52px 0 64px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 2fr; gap: 48px; }
