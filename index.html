@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Taylor Sanders - UI/UX Designer portfolio. Explore my design projects." />
-  <meta name="theme-color" content="#6466e3" />
+  <meta name="theme-color" content="#f8eae3" />
   <title>Taylor Sanders | UI/UX Designer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles (1).css" />
 </head>
 <body>
@@ -20,15 +20,18 @@
 
     <div class="hero__content">
       <h1 class="hero__title">
-        <span class="hero__light">Portfolio</span>
-        <span class="hero__serif">UI/UX Designer</span>
+        <span class="hero__light" data-text="PORTFOLIO">PORTFOLIO</span>
+        <span class="hero__serif">User Interface<br />User Experience</span>
       </h1>
-      <button id="explore-btn" class="btn btn--dark" type="button">Explore Now</button>
     </div>
   </header>
+  <div class="hero-actions">
+      <button id="explore-btn" class="btn btn--dark" type="button">Explore Now <span aria-hidden="true">↘</span></button>
+  </div>
 
   <!-- WELCOME -->
-  <section class="welcome">
+  <section class="welcome" aria-labelledby="welcome-title">
+    <h2 id="welcome-title" class="section-label">A little introduction</h2>
     <p>
       Welcome to my Portfolio!<br />
       I'm a UI/UX designer and front-end developer passionate about creating visually engaging experiences.<br /> I combine creative design with technical skills to bring ideas to life.<br />
@@ -37,6 +40,7 @@
   </section>
 
   <!-- PROJECTS (cards are generated from projects.js) -->
+  <div class="work-heading"><h2>Selected work</h2><span aria-hidden="true">01 — 05</span></div>
   <main id="projects" class="projects" aria-label="Projects"></main>
 
   <!-- FOOTER / CONTACT -->
